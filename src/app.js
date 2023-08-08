@@ -13,7 +13,7 @@ app.use(cors());
 // connect routers
 const userRouter = require("../routes/userRoutes.js");
 
-app.get("/", userRouter);
+app.use("/", userRouter);
 
 //connect database
 connectToDb();
